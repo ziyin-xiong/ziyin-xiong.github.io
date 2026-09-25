@@ -6,7 +6,7 @@ subtitle: 熊梓因 · MS Research Student at the <a href="https://www.ri.cmu.ed
 
 profile:
   align: right
-  image: ziyin-xiong.jpg
+  image: zyxiong.jpg
   image_circular: false
   more_info: >
     <p>Robotics Institute</p>
