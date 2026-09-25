@@ -6,18 +6,20 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{v.$white-color};
+  --global-bg-color: #f7faf9;
   --global-code-bg-color: #{v.$code-bg-color-light};
-  --global-text-color: #{v.$black-color};
-  --global-text-color-light: #{v.$grey-color};
+  --global-text-color: #19231f;
+  --global-text-color-light: #66736f;
   --global-theme-color: #{v.$green-color};
   --global-hover-color: #{v.$green-color};
   --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-dark};
-  --global-footer-text-color: #{v.$grey-color-light};
-  --global-footer-link-color: #{v.$white-color};
+  --global-link-color: #147f79;
+  --global-link-hover-color: #0f6964;
+  --global-footer-bg-color: #edf3f1;
+  --global-footer-text-color: #66736f;
+  --global-footer-link-color: #147f79;
   --global-distill-app-color: #{v.$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-divider-color: rgba(25, 35, 31, 0.12);
   --global-card-bg-color: #{v.$white-color};
   --global-highlight-color: #{v.$red-color-dark};
   --global-back-to-top-bg-color: rgba(
@@ -76,19 +78,21 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{v.$grey-color-dark};
+  --global-bg-color: #111715;
   --global-code-bg-color: #{v.$code-bg-color-dark};
-  --global-text-color: #{v.$grey-color-light};
-  --global-text-color-light: #{v.$grey-color};
+  --global-text-color: #e7eeeb;
+  --global-text-color-light: #95a39e;
   --global-theme-color: #{v.$green-color};
-  --global-hover-color: #{v.$green-color};
+  --global-hover-color: #4fc9c1;
   --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-light};
-  --global-footer-text-color: #{v.$grey-color-dark};
-  --global-footer-link-color: #{v.$black-color};
+  --global-link-color: #4fc9c1;
+  --global-link-hover-color: #72d9d2;
+  --global-footer-bg-color: #0d1210;
+  --global-footer-text-color: #95a39e;
+  --global-footer-link-color: #4fc9c1;
   --global-distill-app-color: #{v.$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{v.$grey-900};
+  --global-divider-color: rgba(231, 238, 235, 0.14);
+  --global-card-bg-color: #19211e;
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$white-color, "red", v.$space: rgb)},
     #{color.channel(v.$white-color, "green", v.$space: rgb)},
@@ -205,4 +209,328 @@ html[data-theme-setting="light"] {
 
 #light-toggle:hover .fa-half-sun-moon::after {
   color: var(--global-theme-color);
+}
+
+/*******************************************************************************
+ * Site-specific visual refinement
+ ******************************************************************************/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+a,
+table.table a {
+  color: var(--global-link-color);
+
+  &:hover {
+    color: var(--global-link-hover-color);
+  }
+}
+
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.navbar {
+  background-color: rgba(247, 250, 249, 0.94);
+  opacity: 1;
+  backdrop-filter: blur(12px);
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 0.92rem;
+    font-weight: 550;
+  }
+}
+
+html[data-theme="dark"] .navbar {
+  background-color: rgba(17, 23, 21, 0.94);
+}
+
+.post {
+  padding-top: 1.5rem;
+}
+
+.post-header {
+  margin-bottom: 1.75rem;
+
+  .post-title {
+    margin-bottom: 0.45rem;
+    font-size: 2.75rem;
+    font-weight: 750;
+    line-height: 1.08;
+    letter-spacing: 0;
+  }
+
+  .desc {
+    margin-bottom: 0;
+    color: var(--global-text-color-light);
+    font-size: 1.02rem;
+    line-height: 1.5;
+  }
+}
+
+article:has(> .profile) {
+  .profile {
+    width: 230px;
+    margin-bottom: 1.5rem;
+
+    &.float-right {
+      margin-left: 2.75rem;
+    }
+
+    img {
+      aspect-ratio: 4 / 5;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 4px;
+      object-fit: cover;
+      box-shadow: 0 12px 30px rgba(25, 35, 31, 0.12);
+    }
+  }
+
+  .clearfix {
+    font-size: 1.01rem;
+    line-height: 1.68;
+  }
+
+  > h2 {
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    padding-top: 2.5rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  > .publications {
+    margin-top: 0.5rem;
+  }
+}
+
+.about-intro {
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  margin: 1.35rem 0;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+
+  a {
+    font-size: 0.92rem;
+    font-weight: 650;
+    text-decoration: none;
+  }
+}
+
+.application-note {
+  margin-top: 1.25rem;
+  padding: 0.75rem 0 0.75rem 1rem;
+  border-left: 3px solid var(--global-theme-color);
+  background: rgba(32, 178, 170, 0.06);
+}
+
+html[data-theme="dark"] .application-note {
+  background: rgba(32, 178, 170, 0.1);
+}
+
+.news {
+  margin-top: 0.5rem;
+
+  table {
+    margin-bottom: 0;
+
+    tr + tr {
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    th,
+    td {
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+      vertical-align: top;
+    }
+
+    th {
+      width: 92px !important;
+      color: var(--global-text-color-light);
+      font-size: 0.84rem;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    td {
+      font-size: 0.94rem;
+      line-height: 1.55;
+    }
+  }
+}
+
+.research-page,
+.service-page {
+  max-width: 700px;
+}
+
+.research-page .research-lead {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.research-page h2,
+.service-page h2 {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.publications {
+  ol.bibliography {
+    > li {
+      margin-bottom: 0;
+      padding: 1.6rem 0;
+      border-top: 1px solid var(--global-divider-color);
+
+      &:first-child {
+        border-top: 0;
+      }
+
+      .row {
+        align-items: flex-start;
+      }
+
+      .abbr {
+        flex: 0 0 185px;
+        max-width: 185px;
+        padding-right: 1.5rem;
+
+        abbr {
+          width: auto !important;
+          padding: 0.2rem 0.55rem;
+          border-radius: 3px;
+          box-shadow: none;
+          font-size: 0.72rem;
+          font-weight: 700;
+        }
+      }
+
+      .preview {
+        margin-top: 0.2rem;
+        border: 1px solid var(--global-divider-color);
+        border-radius: 4px;
+        box-shadow: none;
+      }
+
+      .col-sm-8 {
+        flex: 1 1 0;
+        max-width: none;
+      }
+
+      .title {
+        margin-bottom: 0.35rem;
+        font-size: 1.08rem;
+        font-weight: 700;
+        line-height: 1.4;
+      }
+
+      .author,
+      .periodical {
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+
+      .links {
+        margin-top: 0.65rem;
+
+        a.btn {
+          margin-right: 0.35rem;
+          padding: 0.2rem 0.65rem;
+          border-color: var(--global-divider-color);
+          border-radius: 3px;
+          font-size: 0.76rem;
+        }
+      }
+    }
+  }
+}
+
+.projects .card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+footer.sticky-bottom {
+  margin-top: 4rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  background-color: var(--global-footer-bg-color);
+
+  .container {
+    color: var(--global-footer-text-color);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+  }
+
+  .post {
+    padding-top: 0.75rem;
+  }
+
+  .post-header {
+    margin-bottom: 1.35rem;
+
+    .post-title {
+      font-size: 2.2rem;
+    }
+  }
+
+  article:has(> .profile) {
+    .profile,
+    .profile.float-right {
+      float: none !important;
+      width: min(72%, 230px);
+      margin: 0 auto 1.5rem;
+    }
+
+    > h2 {
+      padding-top: 1.75rem;
+      font-size: 1.65rem;
+    }
+  }
+
+  .about-links {
+    gap: 0.45rem 0.85rem;
+  }
+
+  .publications ol.bibliography > li {
+    padding: 1.35rem 0;
+
+    .abbr {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-right: 0;
+
+      .preview {
+        max-width: 220px;
+      }
+    }
+  }
 }

@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: Research systems and selected engineering projects.
 nav: true
-nav_order: 2
+nav_order: 3
 display_categories: [robot-learning, community]
 horizontal: true
 ---

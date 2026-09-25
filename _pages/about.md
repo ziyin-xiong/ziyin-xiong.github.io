@@ -8,45 +8,32 @@ profile:
   align: right
   image: zyxiong.jpg
   image_circular: false
-  more_info: >
-    <p>Robotics Institute</p>
-    <p>Carnegie Mellon University</p>
-    <p>Pittsburgh, PA</p>
 
 selected_papers: true
-social: true
+social: false
 
 announcements:
   enabled: true
-  scrollable: true
-  limit: 5
+  scrollable: false
+  limit: 3
 
 latest_posts:
   enabled: false
 ---
 
-I am a second-year MS Research student at the [Robotics Institute](https://www.ri.cmu.edu/), Carnegie Mellon University, advised by Prof. [Katerina Fragkiadaki](https://www.cs.cmu.edu/~katef/). I received my Bachelor's degree in Artificial Intelligence from [Tong Class](https://tongclass.ac.cn/) at Yuanpei College, Peking University (2025), with a minor in Economics from the National School of Development.
+<div class="about-intro" markdown="1">
 
-At Peking University, I was advised by Prof. [Yixin Zhu](https://yzhu.io/). I also collaborated with Dr. [Siyuan Huang](https://siyuanhuang.com/) and Dr. [Tengyu Liu](https://tengyu.ai/) at [BIGAI](https://eng.bigai.ai/), and Prof. [Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html) at [UC Berkeley](https://www.berkeley.edu/).
+I am a second-year MS Research student at the [Robotics Institute](https://www.ri.cmu.edu/), Carnegie Mellon University, advised by Prof. [Katerina Fragkiadaki](https://www.cs.cmu.edu/~katef/). I received my Bachelor's degree in Artificial Intelligence from [Tong Class](https://tongclass.ac.cn/) at Yuanpei College, Peking University.
 
-My goal is to build robots that are useful in everyday life, acting with dexterity, efficiency, and reliability in complex, changing environments.
+I build robots that can act with dexterity and reliability in changing environments. My [research]({{ '/research/' | relative_url }}) focuses on physically grounded multimodal representations and scalable learning through interaction.
 
-## Research interests
+<nav class="about-links" aria-label="Profile links">
+  <a href="mailto:xiongziyin@stu.pku.edu.cn">Email</a>
+  <a href="https://scholar.google.com/citations?user=7Rfh6rEAAAAJ">Google Scholar</a>
+  <a href="https://github.com/ziyin-xiong">GitHub</a>
+  <a href="https://x.com/ziyin_xiong">X</a>
+</nav>
 
-Large-scale data has driven remarkable progress in robot learning. My research asks how robots could make the most of it: physical understanding that keeps fine-grained actions robust, and reasoning that transfers to new tasks. I pursue this along two directions:
+<p class="application-note"><strong>PhD applications:</strong> I am applying for programs starting in Fall 2027 and would be glad to connect about potential opportunities.</p>
 
-**Physically grounded multimodal representations.** Effective dexterous manipulation requires understanding scene geometry and the dynamics of physical contact. I study how visual, geometric, and tactile information can be coherently integrated to connect perception, prediction, and action, enabling robots to anticipate and control their interactions with the world.
-
-**Scaling reasoning and learning through interaction.** I aim to scale robots' ability to solve novel tasks, reducing reliance on exhaustive demonstration coverage. I am interested in how foundation-model reasoning can guide planning and exploration, while reinforcement learning enables improvement through experience. Simulation supports scalable interaction, complemented by real-world feedback for adaptation and transfer.
-
-> **PhD applications.** I am applying for PhD programs starting in Fall 2027 and would be glad to connect about potential opportunities.
-
-## Service
-
-Conference reviewer: CoRL 2026. Workshop reviewer: Trustworthy Embodied Foundation Models at RSS 2026 and CompLearn at ICML 2026.
-
-## Beyond research
-
-I believe **sound is the medium closest to the soul**. Honest and meaningful communication can bring the world closer together.
-
-I am enthusiastic about podcasts for their efficient and intimate way of sharing knowledge and ideas. I am preparing a personal podcast exploring geopolitical history, traditional customs, and popular culture. Please reach out if you are passionate about these subjects or interested in starting a podcast.
+</div>

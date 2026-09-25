@@ -4,7 +4,7 @@ permalink: /publications/
 title: publications
 description: Selected work in robot learning, multimodal representation learning, and embodied AI.
 nav: true
-nav_order: 1
+nav_order: 2
 ---
 
 {% include bib_search.liquid %}
