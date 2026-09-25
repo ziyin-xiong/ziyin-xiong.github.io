@@ -113,7 +113,10 @@ jobs:
           bundle exec jekyll build 2>&1 | tee /tmp/jekyll-build.log
           build_status=${PIPESTATUS[0]}
           if [ "$build_status" -ne 0 ]; then
-            error_excerpt=$(tail -n 60 /tmp/jekyll-build.log)
+            error_excerpt=$(grep -Ei "error|exception|fatal|undefined|no such|not found|cannot|could not" /tmp/jekyll-build.log | head -n 80)
+            if [ -z "$error_excerpt" ]; then
+              error_excerpt=$(head -n 80 /tmp/jekyll-build.log)
+            fi
             error_excerpt=${error_excerpt//'%'/'%25'}
             error_excerpt=${error_excerpt//$'\r'/'%0D'}
             error_excerpt=${error_excerpt//$'\n'/'%0A'}
