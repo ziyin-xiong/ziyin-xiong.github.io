@@ -104,11 +104,23 @@ jobs:
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
       - name: Install and Build 🔧
+        shell: bash
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
-          bundle exec jekyll build
+          set +e
+          bundle exec jekyll build 2>&1 | tee /tmp/jekyll-build.log
+          build_status=${PIPESTATUS[0]}
+          if [ "$build_status" -ne 0 ]; then
+            {
+              echo "### Jekyll build failure"
+              echo '```text'
+              tail -n 120 /tmp/jekyll-build.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit "$build_status"
+          fi
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
