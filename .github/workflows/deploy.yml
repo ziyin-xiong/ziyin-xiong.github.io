@@ -113,6 +113,11 @@ jobs:
           bundle exec jekyll build 2>&1 | tee /tmp/jekyll-build.log
           build_status=${PIPESTATUS[0]}
           if [ "$build_status" -ne 0 ]; then
+            error_excerpt=$(tail -n 60 /tmp/jekyll-build.log)
+            error_excerpt=${error_excerpt//'%'/'%25'}
+            error_excerpt=${error_excerpt//$'\r'/'%0D'}
+            error_excerpt=${error_excerpt//$'\n'/'%0A'}
+            echo "::error title=Jekyll build failure::$error_excerpt"
             {
               echo "### Jekyll build failure"
               echo '```text'
