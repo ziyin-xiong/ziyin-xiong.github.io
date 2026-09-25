@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ziyin-xiong.github.io/sitemap.xml
