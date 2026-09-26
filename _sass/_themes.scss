@@ -512,10 +512,29 @@ body .publications ol.bibliography > li .author a {
   }
 }
 
+.publication-section-heading {
+  display: flex;
+  clear: both;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+  padding-top: 2.5rem;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
 .publication-tabs {
   display: inline-flex;
+  flex: 0 0 auto;
   gap: 0.25rem;
-  margin: 0.35rem 0 0.7rem;
+  margin-left: auto;
   padding: 0.25rem;
   border: 1px solid var(--global-divider-color);
   border-radius: 6px;
@@ -635,13 +654,20 @@ body.sticky-bottom-footer footer.sticky-bottom {
     }
   }
 
+  .publication-section-heading {
+    flex-wrap: wrap;
+    padding-top: 1.75rem;
+
+    h2 {
+      font-size: 1.65rem;
+    }
+  }
+
   .publication-tabs {
-    display: flex;
-    width: 100%;
+    max-width: 100%;
   }
 
   .publication-tab {
-    flex: 1;
     padding-right: 0.4rem;
     padding-left: 0.4rem;
     font-size: 0.74rem;

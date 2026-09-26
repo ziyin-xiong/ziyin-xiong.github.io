@@ -1,29 +1,31 @@
 <div class="publication-switcher" id="publication-switcher">
-  <div class="publication-tabs" role="tablist" aria-label="Publication selection">
-    <button
-      class="publication-tab"
-      id="publication-tab-selected"
-      type="button"
-      role="tab"
-      aria-selected="true"
-      aria-controls="publication-panel"
-      tabindex="0"
-      data-publication-view="selected"
-    >
-      Selected Publications
-    </button>
-    <button
-      class="publication-tab"
-      id="publication-tab-all"
-      type="button"
-      role="tab"
-      aria-selected="false"
-      aria-controls="publication-panel"
-      tabindex="-1"
-      data-publication-view="all"
-    >
-      All Publications
-    </button>
+  <div class="publication-section-heading">
+    <div class="publication-tabs" role="tablist" aria-label="Publication selection">
+      <button
+        class="publication-tab"
+        id="publication-tab-selected"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        aria-controls="publication-panel"
+        tabindex="0"
+        data-publication-view="selected"
+      >
+        Selected Publications
+      </button>
+      <button
+        class="publication-tab"
+        id="publication-tab-all"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="publication-panel"
+        tabindex="-1"
+        data-publication-view="all"
+      >
+        All Publications
+      </button>
+    </div>
   </div>
 
   <div id="publication-panel" class="publication-panel" role="tabpanel" aria-labelledby="publication-tab-selected" tabindex="0">
@@ -55,9 +57,12 @@
     const entries = Array.from(switcher.querySelectorAll('[data-publication-list] > ol.bibliography > li'));
     const selectedSource = switcher.querySelector('template[data-selected-publications]');
     const selectedKeys = new Set(Array.from(selectedSource.content.querySelectorAll('ol.bibliography > li [id]'), (entry) => entry.id));
-    const heading = switcher.previousElementSibling?.querySelector('a');
+    const sectionHeading = switcher.previousElementSibling;
+    const heading = sectionHeading?.querySelector('a');
+    const headingRow = switcher.querySelector('.publication-section-heading');
 
     selectedSource.remove();
+    if (sectionHeading?.tagName === 'H2') headingRow.prepend(sectionHeading);
 
     const activate = (tab) => {
       const showAll = tab.dataset.publicationView === 'all';
