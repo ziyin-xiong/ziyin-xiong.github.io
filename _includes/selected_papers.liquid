@@ -1,0 +1,99 @@
+<div class="publication-switcher" id="publication-switcher">
+  <div class="publication-tabs" role="tablist" aria-label="Publication selection">
+    <button
+      class="publication-tab"
+      id="publication-tab-selected"
+      type="button"
+      role="tab"
+      aria-selected="true"
+      aria-controls="publication-panel"
+      tabindex="0"
+      data-publication-view="selected"
+    >
+      Selected Publications
+    </button>
+    <button
+      class="publication-tab"
+      id="publication-tab-all"
+      type="button"
+      role="tab"
+      aria-selected="false"
+      aria-controls="publication-panel"
+      tabindex="-1"
+      data-publication-view="all"
+    >
+      All Publications
+    </button>
+  </div>
+
+  <div id="publication-panel" class="publication-panel" role="tabpanel" aria-labelledby="publication-tab-selected" tabindex="0">
+    <div class="publications" data-publication-list>
+      {% bibliography --group_by none %}
+    </div>
+  </div>
+
+  <template data-selected-publications>
+    {% bibliography --group_by none --query @*[selected=true]* %}
+  </template>
+
+  <noscript>
+    <style>
+      .publication-tabs {
+        display: none;
+      }
+    </style>
+  </noscript>
+</div>
+
+<script>
+  (() => {
+    const switcher = document.getElementById('publication-switcher');
+    if (!switcher) return;
+
+    const tabs = Array.from(switcher.querySelectorAll('[role="tab"]'));
+    const panel = switcher.querySelector('[role="tabpanel"]');
+    const entries = Array.from(switcher.querySelectorAll('[data-publication-list] > ol.bibliography > li'));
+    const selectedSource = switcher.querySelector('template[data-selected-publications]');
+    const selectedKeys = new Set(Array.from(selectedSource.content.querySelectorAll('ol.bibliography > li [id]'), (entry) => entry.id));
+    const heading = switcher.previousElementSibling?.querySelector('a');
+
+    selectedSource.remove();
+
+    const activate = (tab) => {
+      const showAll = tab.dataset.publicationView === 'all';
+
+      tabs.forEach((candidate) => {
+        const isActive = candidate === tab;
+        candidate.setAttribute('aria-selected', String(isActive));
+        candidate.tabIndex = isActive ? 0 : -1;
+      });
+
+      entries.forEach((entry) => {
+        const key = entry.querySelector('[id]')?.id;
+        entry.hidden = !showAll && !selectedKeys.has(key);
+      });
+
+      panel.setAttribute('aria-labelledby', tab.id);
+      if (heading) heading.textContent = showAll ? 'All Publications' : 'Selected Publications';
+    };
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activate(tab));
+      tab.addEventListener('keydown', (event) => {
+        let nextIndex;
+
+        if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+        else if (event.key === 'Home') nextIndex = 0;
+        else if (event.key === 'End') nextIndex = tabs.length - 1;
+        else return;
+
+        event.preventDefault();
+        activate(tabs[nextIndex]);
+        tabs[nextIndex].focus();
+      });
+    });
+
+    activate(tabs[0]);
+  })();
+</script>

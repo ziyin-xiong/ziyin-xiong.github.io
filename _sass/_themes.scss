@@ -424,6 +424,24 @@ html[data-theme="dark"] .application-note {
   letter-spacing: 0;
 }
 
+body .publications ol.bibliography > li .author a {
+  color: inherit;
+  border-bottom: 0;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    border-bottom: 0;
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 2px;
+  }
+}
+
 .publications {
   ol.bibliography {
     > li {
@@ -494,6 +512,59 @@ html[data-theme="dark"] .application-note {
   }
 }
 
+.publication-tabs {
+  display: inline-flex;
+  gap: 0.25rem;
+  margin: 0.35rem 0 0.7rem;
+  padding: 0.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  background: var(--global-code-bg-color);
+}
+
+.publication-tab {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--global-text-color-light);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.2;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(32, 178, 170, 0.08);
+    color: var(--global-theme-color);
+  }
+
+  &[aria-selected="true"] {
+    border-color: var(--global-divider-color);
+    background: var(--global-bg-color);
+    color: var(--global-theme-color);
+    box-shadow: 0 1px 4px rgba(25, 35, 31, 0.08);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 2px;
+  }
+}
+
+.publication-panel:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 3px;
+}
+
+.publication-panel > .publications {
+  margin-top: 0;
+}
+
 .projects .card {
   border: 1px solid var(--global-divider-color);
   border-radius: 4px;
@@ -562,5 +633,17 @@ body.sticky-bottom-footer footer.sticky-bottom {
         max-width: 220px;
       }
     }
+  }
+
+  .publication-tabs {
+    display: flex;
+    width: 100%;
+  }
+
+  .publication-tab {
+    flex: 1;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    font-size: 0.74rem;
   }
 }
