@@ -25,7 +25,7 @@ latest_posts:
 
 I am a second-year MS Research student at the [Robotics Institute](https://www.ri.cmu.edu/), Carnegie Mellon University, advised by Prof. [Katerina Fragkiadaki](https://www.cs.cmu.edu/~katef/). I received my Bachelor's degree in Artificial Intelligence from [Tong Class](https://tongclass.ac.cn/) at Yuanpei College, Peking University.
 
-I build robots that can act with dexterity and reliability in changing environments. My [research]({{ '/research/' | relative_url }}) focuses on physically grounded multimodal representations and scalable learning through interaction.
+I build robots that can act with dexterity and reliability in changing environments. My [research](#research) focuses on physically grounded multimodal representations and scalable learning through interaction.
 
 <nav class="about-links" aria-label="Profile links">
   <a href="mailto:xiongziyin@stu.pku.edu.cn">Email</a>
@@ -37,3 +37,11 @@ I build robots that can act with dexterity and reliability in changing environme
 <p class="application-note"><strong>PhD applications:</strong> I am applying for programs starting in Fall 2027 and would be glad to connect about potential opportunities.</p>
 
 </div>
+
+<section id="research" class="research-page home-research" markdown="1">
+
+## Research
+
+{% include research_content.md %}
+
+</section>

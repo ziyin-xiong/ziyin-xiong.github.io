@@ -414,6 +414,18 @@ html[data-theme="dark"] .application-note {
   line-height: 1.6;
 }
 
+.home-research {
+  clear: both;
+  margin-top: 2.75rem;
+
+  > h2:first-child {
+    margin: 0 0 1.25rem;
+    padding: 0;
+    border-top: 0;
+    font-size: 1.9rem;
+  }
+}
+
 .research-page h2,
 .service-page h2 {
   margin-top: 2.5rem;
