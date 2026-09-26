@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /service/
-title: service
+title: Service
 description: Academic reviewing and interests beyond research.
 nav: true
 nav_order: 4
@@ -15,7 +15,7 @@ Conference reviewer: CoRL 2026.
 
 Workshop reviewer: Trustworthy Embodied Foundation Models at RSS 2026 and CompLearn at ICML 2026.
 
-## Beyond research
+## Beyond Research
 
 I believe **sound is the medium closest to the soul**. Honest and meaningful communication can bring the world closer together.
 

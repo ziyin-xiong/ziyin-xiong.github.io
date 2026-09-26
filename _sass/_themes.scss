@@ -221,6 +221,30 @@ body {
   line-height: 1.65;
 }
 
+body.sticky-bottom-footer {
+  display: flex;
+  min-height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+
+  > .container[role="main"] {
+    width: 100%;
+    flex: 1 0 auto;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .nav-link,
+.publications .title,
+.card-title {
+  text-transform: capitalize;
+}
+
 a,
 table.table a {
   color: var(--global-link-color);
@@ -364,9 +388,11 @@ html[data-theme="dark"] .application-note {
 
     th {
       width: 92px !important;
+      padding-left: 0;
       color: var(--global-text-color-light);
       font-size: 0.84rem;
       font-weight: 650;
+      text-align: left;
       white-space: nowrap;
     }
 
@@ -475,10 +501,13 @@ html[data-theme="dark"] .application-note {
 }
 
 footer.sticky-bottom {
-  margin-top: 4rem;
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
+  margin-top: auto !important;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   background-color: var(--global-footer-bg-color);
+  flex: 0 0 auto;
+  font-size: 0.75rem;
+  line-height: 1.35;
 
   .container {
     color: var(--global-footer-text-color);

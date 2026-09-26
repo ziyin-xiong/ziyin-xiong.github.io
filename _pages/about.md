@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: 熊梓因 · MS Research Student at the <a href="https://www.ri.cmu.edu/">Robotics Institute, Carnegie Mellon University</a>
+subtitle: 熊梓因 · Robotics Institute, Carnegie Mellon University
 
 profile:
   align: right
