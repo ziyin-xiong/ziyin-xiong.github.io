@@ -10,6 +10,7 @@ profile:
   image_circular: false
 
 selected_papers: true
+research_section: true
 social: false
 
 announcements:
@@ -37,11 +38,3 @@ I build robots that can act with dexterity and reliability in changing environme
 <p class="application-note"><strong>PhD applications:</strong> I am applying for programs starting in Fall 2027 and would be glad to connect about potential opportunities.</p>
 
 </div>
-
-<section id="research" class="research-page home-research" markdown="1">
-
-## Research
-
-{% include research_content.md %}
-
-</section>

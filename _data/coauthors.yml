@@ -10,6 +10,10 @@
   - firstname: ["Siyuan", "S."]
     url: https://siyuanhuang.com/
 
+"liang":
+  - firstname: ["Boyuan", "B."]
+    url: https://github.com/Oscar-B-Liang
+
 "li":
   - firstname: ["Puhao", "P."]
     url: https://xiaoyao-li.github.io/
@@ -22,6 +26,24 @@
   - firstname: ["Moritz", "M."]
     url: https://mbreuss.github.io/
 
+"sreenath":
+  - firstname: ["Koushil", "K."]
+    url: https://hybrid-robotics.berkeley.edu/koushil/
+
+"sun":
+  - firstname: ["Lingfeng", "L."]
+    url: https://lingfeng.moe/
+
+"tomizuka":
+  - firstname: ["Masayoshi", "M."]
+    url: https://msc.berkeley.edu/people/tomizuka.html
+
+"wang":
+  - firstname: ["Yixiao", "Y."]
+    url: https://yixiaowang7.github.io/
+
 "zhu":
   - firstname: ["Yixin", "Y."]
     url: https://yzhu.io/
+  - firstname: ["Xinghao", "X."]
+    url: https://rolandzhu.github.io/
