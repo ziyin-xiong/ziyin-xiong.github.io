@@ -9,7 +9,3 @@ Effective dexterous manipulation requires understanding scene geometry and the d
 ## Scaling Reasoning And Learning Through Interaction
 
 I aim to scale robots' ability to solve novel tasks while reducing reliance on exhaustive demonstration coverage. I am interested in how foundation-model reasoning can guide planning and exploration, while reinforcement learning enables improvement through experience. Simulation supports scalable interaction, complemented by real-world feedback for adaptation and transfer.
-
-## Collaborations
-
-At Peking University, I was advised by Prof. [Yixin Zhu](https://yzhu.io/). I also collaborated with Dr. [Siyuan Huang](https://siyuanhuang.com/) and Dr. [Tengyu Liu](https://tengyu.ai/) at [BIGAI](https://eng.bigai.ai/), and Prof. [Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html) at [UC Berkeley](https://www.berkeley.edu/).
