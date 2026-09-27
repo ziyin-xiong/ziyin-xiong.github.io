@@ -35,6 +35,6 @@ I received my Bachelor's degree in Artificial Intelligence from [Tong Class](htt
   <a href="https://x.com/ziyin_xiong">X</a>
 </nav>
 
-<p class="application-note"><strong>PhD applications:</strong> I am applying for programs starting in Fall 2027 and would be glad to connect about potential opportunities.</p>
+<p class="application-note"><strong>PhD applications:</strong> I am applying for programs starting in Fall 2027 and would be glad to connect about potential opportunities!</p>
 
 </div>
