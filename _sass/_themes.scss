@@ -262,6 +262,15 @@ table.table a {
   }
 }
 
+body article p a:not(.btn),
+body article td a:not(.btn) {
+  color: var(--global-link-color);
+
+  &:hover {
+    color: var(--global-link-hover-color);
+  }
+}
+
 .container {
   box-sizing: border-box;
   padding-right: 1.5rem;
