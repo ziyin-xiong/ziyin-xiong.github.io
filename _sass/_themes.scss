@@ -433,6 +433,10 @@ html[data-theme="dark"] .application-note {
     td {
       font-size: 0.94rem;
       line-height: 1.55;
+
+      strong {
+        font-weight: 700;
+      }
     }
   }
 }
