@@ -28,6 +28,6 @@ Volunteer for bilateral meetings at APEC 2023.
 
 I believe **sound is the medium closest to the soul**. Honest and meaningful communication can bring the world closer together.
 
-I am enthusiastic about podcasts for their efficient and intimate way of sharing knowledge and ideas. I am preparing a personal podcast exploring geopolitical history, traditional customs, and popular culture. Please reach out if you are passionate about these subjects or interested in starting a podcast.
+I am enthusiastic about podcasts for their efficient and intimate way of sharing knowledge and ideas. I am preparing a personal podcast exploring history, traditional customs, and popular culture. Please reach out if you are passionate about these subjects or interested in starting a podcast.
 
 </div>
