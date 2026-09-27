@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work **Decomposing VAM Uncertainty: Training-Free and Supervised Probes for Robot Failure Detection** was accepted to the [Rethinking Safety Workshop](https://workwander.tech/workshop/generalist_safety_rss_2026.html) and selected for an oral presentation at the [Trustworthy Embodied Foundation Models Workshop](https://robot-fm-safety.github.io/) at RSS 2026.
+Our work **Decomposing VAM Uncertainty** was accepted to the [Rethinking Safety Workshop](https://workwander.tech/workshop/generalist_safety_rss_2026.html) and selected for an oral presentation at the [Trustworthy Embodied Foundation Models Workshop](https://robot-fm-safety.github.io/) at RSS 2026.
