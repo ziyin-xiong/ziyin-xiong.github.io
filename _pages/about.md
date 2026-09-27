@@ -26,7 +26,7 @@ latest_posts:
 
 I am a second-year MS Research student at the [Robotics Institute](https://www.ri.cmu.edu/), Carnegie Mellon University, advised by Prof. [Katerina Fragkiadaki](https://www.cs.cmu.edu/~katef/). I build robots that can act with dexterity and reliability in changing environments. My [research](#research) focuses on physically grounded multimodal representations and scalable learning through interaction.
 
-I received my Bachelor's degree in Artificial Intelligence from [Tong Class](https://tongclass.ac.cn/) at Yuanpei College, Peking University, advised by Prof. [Yixin Zhu](https://yzhu.io/). I also collaborated with Dr. [Siyuan Huang](https://siyuanhuang.com/) and Dr. [Tengyu Liu](https://tengyu.ai/) at [BIGAI](https://eng.bigai.ai/), and Prof. [Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html) at UC Berkeley.
+I received my Bachelor's degree in Artificial Intelligence from [Tong Class](https://tongclass.ac.cn/) at Yuanpei College, Peking University, advised by Prof. [Yixin Zhu](https://yzhu.io/). I also collaborated with Dr. [Siyuan Huang](https://siyuanhuang.com/) and [Tengyu Liu](https://tengyu.ai/) at [BIGAI](https://eng.bigai.ai/), and Prof. [Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html) at UC Berkeley.
 
 <nav class="about-links" aria-label="Profile links">
   <a href="mailto:xiongziyin@stu.pku.edu.cn">Email</a>
