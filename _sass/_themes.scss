@@ -474,6 +474,11 @@ body .publications ol.bibliography > li .author a {
   }
 }
 
+body .publications ol.bibliography > li .author > em {
+  font-style: normal;
+  font-weight: 700;
+}
+
 .publications {
   ol.bibliography {
     > li {
