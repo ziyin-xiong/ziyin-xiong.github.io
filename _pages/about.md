@@ -29,7 +29,7 @@ I am a second-year MS Robotics student at the [Robotics Institute](https://www.r
 I received my Bachelor's degree in Artificial Intelligence from [Tong Class](https://tongclass.ac.cn/) at Yuanpei College, Peking University, advised by Prof. [Yixin Zhu](https://yzhu.io/). I also collaborated with Dr. [Siyuan Huang](https://siyuanhuang.com/) and Dr. [Tengyu Liu](https://tengyu.ai/) at [BIGAI](https://eng.bigai.ai/), and Prof. [Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html) at University of California, Berkeley.
 
 <nav class="about-links" aria-label="Profile links">
-  <a href="mailto:xiongziyin@stu.pku.edu.cn">Email</a>
+  <a href="mailto:ziyinx@andrew.cmu.edu">Email</a>
   <a href="https://scholar.google.com/citations?user=7Rfh6rEAAAAJ">Google Scholar</a>
   <a href="https://github.com/ziyin-xiong">GitHub</a>
   <a href="https://x.com/ziyin_xiong">X</a>
