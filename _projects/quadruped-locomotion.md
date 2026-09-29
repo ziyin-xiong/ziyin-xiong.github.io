@@ -127,10 +127,6 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
         <li><strong>Several symmetries, one test bed.</strong> Diagonal, bilateral, temporal, and mixed-gait objectives are isolated under the same training setup.</li>
         <li><strong>Stress-tested learning.</strong> A wide command range and randomized dynamics evaluate more than nominal-speed behavior.</li>
       </ul>
-      <a class="locomotion-text-link" href="https://app.notion.com/p/Experiment-Results-972dbcd171b94683a4ef46b46b1cbb63" target="_blank" rel="noopener noreferrer">
-        Open The Full Experiment Log
-        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-      </a>
     </div>
   </section>
 </div>
