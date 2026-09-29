@@ -9,7 +9,7 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
 
 <div class="locomotion-study">
   <header class="locomotion-intro">
-    <p class="locomotion-kicker">UC Berkeley · Locomotion · Reinforcement Learning · Symmetry in Motion/p>
+    <p class="locomotion-kicker">UC Berkeley · Locomotion · Reinforcement Learning · Symmetry in Motion
     <p class="locomotion-deck">
       Can a quadruped learn fast, stable locomotion more efficiently when its reward reflects the symmetries already present in animal motion? This project studies structured regularization for coordinated gait learning without prescribing a single fixed gait.
     </p>
