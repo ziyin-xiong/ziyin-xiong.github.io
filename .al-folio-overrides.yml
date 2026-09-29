@@ -41,7 +41,7 @@ overrides:
     gem_version: 1.0.15
     upstream_path: _sass/_themes.scss
     upstream_sha256: b581e43dcfbf21c14f388e2b585474c886fad62f6b5a0444f7832e7f69745f1f
-    local_sha256: 9682c3db70bae4ca3f6dbb0ee4155aa712034c1de04cb1d933de4c661d66e95d
+    local_sha256: 3a7a6a2089e24e3b20b091c788ae60cec9133eb83077841c90367762be7931fa
     acknowledged_at: "2026-09-25"
   _sass/_variables.scss:
     owner: al_folio_core
