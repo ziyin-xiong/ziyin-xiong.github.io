@@ -8,19 +8,10 @@ category: robot-learning
 
 <div class="anymanip-study">
   <header class="anymanip-intro">
-    <p class="anymanip-kicker">BIGAI · Robot Learning · Optical Flow</p>
+    <p class="anymanip-kicker">BIGAI · Manipulation · Imitation Learning · Optical Flow</p>
     <p class="anymanip-deck">
       AnyManip treats motion as the bridge between visual understanding and robot control. A diffusion model first predicts task-relevant optical flow; a robot policy then combines that prediction with RGB observations and proprioception to produce actions.
     </p>
-    <a
-      class="anymanip-action"
-      href="https://docs.google.com/presentation/d/19nUYHw8X3sdLhDyd7jTqibmMLVAhmP2ckVoNxw-0xtU/edit?slide=id.g32db6ab4331_0_0#slide=id.g32db6ab4331_0_0"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="fa-brands fa-google-drive" aria-hidden="true"></i>
-      Experiment Slides
-    </a>
   </header>
 
   <div class="anymanip-pipeline" aria-label="AnyManip two-stage pipeline">
@@ -109,18 +100,9 @@ category: robot-learning
     <p>
       Optical flow provides a robot-agnostic description of how a task should evolve. By separating motion prediction from action generation, AnyManip can learn from heterogeneous visual data while leaving embodiment-specific control to the policy.
     </p>
-    <a
-      class="anymanip-text-link"
-      href="https://docs.google.com/presentation/d/19nUYHw8X3sdLhDyd7jTqibmMLVAhmP2ckVoNxw-0xtU/edit?slide=id.g32db6ab4331_0_0#slide=id.g32db6ab4331_0_0"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View The Full Experiment Deck
-      <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-    </a>
   </section>
 
   <p class="anymanip-credit">
-    This project was conducted at the Beijing Institute for General Artificial Intelligence with Dr. Siyuan Huang and Dr. Tengyu Liu.
+    This project was conducted at the Beijing Institute for General Artificial Intelligence with Peiyuan Zhi and Yang Yang, advised by Dr. Tengyu Liu and Dr. Siyuan Huang.
   </p>
 </div>
