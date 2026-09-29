@@ -722,4 +722,48 @@ body.sticky-bottom-footer footer.sticky-bottom {
     padding-left: 0.4rem;
     font-size: 0.74rem;
   }
+
+  .projects {
+    > .container {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .col {
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      flex: 0 0 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .card,
+    .card-body {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .card-title {
+      font-size: 1.6rem;
+      overflow-wrap: anywhere;
+    }
+
+    .card-text,
+    h2.category {
+      overflow-wrap: anywhere;
+    }
+
+    h2.category {
+      font-size: 1.5rem;
+    }
+  }
 }
