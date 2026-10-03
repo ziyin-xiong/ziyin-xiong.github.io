@@ -764,6 +764,10 @@ body .publications ol.bibliography > li .author > em {
     font-size: 0.98rem;
     line-height: 1.72;
   }
+
+  p + p {
+    margin-top: 0.8rem;
+  }
 }
 
 .anymanip-demo-grid {
@@ -810,6 +814,22 @@ body .publications ol.bibliography > li .author > em {
 
 .anymanip-policy-grid img {
   aspect-ratio: 16 / 8.9;
+}
+
+.anymanip-result-grid {
+  grid-template-columns: minmax(0, 1fr);
+
+  a {
+    display: block;
+  }
+
+  img {
+    height: auto;
+  }
+
+  figcaption {
+    min-height: 0;
+  }
 }
 
 .anymanip-demo-label {

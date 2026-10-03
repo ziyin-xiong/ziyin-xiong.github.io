@@ -35,6 +35,9 @@ category: robot-learning
       <p>
         The flow model focuses on motion that matters for the instruction: where the gripper should move, which object should be manipulated, and how the interaction should unfold over time.
       </p>
+      <p>
+        Training targets come from optical flow estimated in robot and human manipulation videos, including BridgeData V2, DROID, and RH20T. From an initial scene and a language instruction, the model predicts future dense motion for both the end effector and the object.
+      </p>
     </div>
     <div class="anymanip-demo-grid anymanip-flow-grid">
       <figure>
@@ -63,30 +66,68 @@ category: robot-learning
       <span>02 · Robot Policy</span>
       <h2>From Pixels To Actions</h2>
       <p>
-        The policy closes the loop. It conditions on the current scene, predicted object and end-effector motion, and the robot state, then replans actions as the manipulation progresses.
+        The action model combines the current RGB observation, predicted motion, and robot state. It predicts a sequence of Cartesian position, orientation, and gripper commands; the examples below show the scene and motion cues for two simulated tasks.
       </p>
     </div>
     <div class="anymanip-demo-grid anymanip-policy-grid">
       <figure>
         <img
           src="{{ '/assets/img/projects/anymanip/policy-carrot.jpg' | relative_url }}"
-          alt="Integrated AnyManip rollout for placing a carrot on a plate"
+          alt="Carrot placement scene alongside object and gripper motion representations"
           loading="lazy"
         >
         <figcaption>
-          <strong>Carrot Placement</strong>
-          Scene grounding, object motion, and gripper motion in one rollout.
+          <strong>Carrot Placement Setup</strong>
+          RGB scene, interaction regions, and predicted motion for placing a carrot on a plate.
         </figcaption>
       </figure>
       <figure>
         <img
           src="{{ '/assets/img/projects/anymanip/policy-stack.jpg' | relative_url }}"
-          alt="Integrated AnyManip rollout for stacking colored blocks"
+          alt="Block stacking scene alongside object and gripper motion representations"
           loading="lazy"
         >
         <figcaption>
-          <strong>Block Stacking</strong>
-          The same representation supports a contact-rich compositional task.
+          <strong>Block Stacking Setup</strong>
+          The same scene and motion representation applied to a compositional task.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="anymanip-section">
+    <div class="anymanip-section-heading">
+      <span>03 · Offline Action Evaluation</span>
+      <h2>Predicted Actions Across Tasks</h2>
+      <p>
+        Later experiments compare policy predictions with demonstrated actions across seven channels: x, y, z, yaw, pitch, roll, and grasp. Each result pairs sampled episode frames with the predicted and reference action traces.
+      </p>
+    </div>
+    <div class="anymanip-demo-grid anymanip-result-grid">
+      <figure>
+        <a href="{{ '/assets/img/projects/anymanip/action-cloth-basket.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size yellow cloth action comparison" title="Open full-size result">
+          <img
+            src="{{ '/assets/img/projects/anymanip/action-cloth-basket.webp' | relative_url }}"
+            alt="Yellow cloth episode frames above predicted and demonstrated Cartesian, orientation, and grasp action traces"
+            loading="lazy"
+          >
+        </a>
+        <figcaption>
+          <strong>Yellow Cloth Into A Basket</strong>
+          Offline action comparison for placing a cloth into a basket. Blue: prediction; orange: demonstration.
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="{{ '/assets/img/projects/anymanip/action-mushroom-pot.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size mushroom action comparison" title="Open full-size result">
+          <img
+            src="{{ '/assets/img/projects/anymanip/action-mushroom-pot.webp' | relative_url }}"
+            alt="Mushroom placement episode frames above predicted and demonstrated Cartesian, orientation, and grasp action traces"
+            loading="lazy"
+          >
+        </a>
+        <figcaption>
+          <strong>Mushroom Into A Pot</strong>
+          A second instruction and object configuration, evaluated with the same seven action channels.
         </figcaption>
       </figure>
     </div>
@@ -94,7 +135,7 @@ category: robot-learning
 
   <section class="anymanip-section anymanip-summary">
     <div class="anymanip-section-heading">
-      <span>03 · Perspective</span>
+      <span>04 · Perspective</span>
       <h2>Why Flow?</h2>
     </div>
     <p>
