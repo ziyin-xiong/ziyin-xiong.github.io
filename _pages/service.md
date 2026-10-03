@@ -10,9 +10,9 @@ nav_order: 4
 
 ## Peer Review
 
-Conference reviewer: CoRL 2026.
+Conference reviewer: CoRL 2026; ICRA 2027.
 
-Workshop reviewer: Trustworthy Embodied Foundation Models at RSS 2026 and CompLearn at ICML 2026.
+Workshop reviewer: Trustworthy Embodied Foundation Models at RSS 2026; CompLearn at ICML 2026.
 
 ## Teaching
 
