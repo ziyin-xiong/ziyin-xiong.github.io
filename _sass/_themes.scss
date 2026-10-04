@@ -1406,6 +1406,76 @@ body .publications ol.bibliography > li .author > em {
   }
 }
 
+.locomotion-chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.1rem;
+  margin-top: 0.7rem;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--global-text-color);
+    font-size: 0.73rem;
+    font-weight: 650;
+
+    &::before {
+      display: block;
+      width: 18px;
+      height: 3px;
+      border-radius: 2px;
+      background: #2b87b8;
+      content: "";
+    }
+  }
+
+  .locomotion-chart-commanded::before {
+    background: #f09232;
+  }
+}
+
+.locomotion-hardware-demo-grid video {
+  aspect-ratio: 960 / 444;
+}
+
+.locomotion-sensor-demo {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.7rem 0 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+
+  video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 540 / 1168;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 4px;
+    background: #1a1a1d;
+  }
+
+  strong,
+  span {
+    display: block;
+  }
+
+  strong {
+    margin-bottom: 0.55rem;
+    color: var(--global-text-color);
+    font-size: 0.96rem;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+    font-size: 0.83rem;
+    line-height: 1.65;
+  }
+}
+
 .locomotion-hardware-links {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1414,7 +1484,7 @@ body .publications ol.bibliography > li .author > em {
 
   a {
     display: flex;
-    min-height: 70px;
+    min-height: 54px;
     align-items: center;
     gap: 0.55rem;
     padding: 0.8rem;
@@ -1732,6 +1802,16 @@ body.sticky-bottom-footer footer.sticky-bottom {
 
     a {
       min-height: 48px;
+    }
+  }
+
+  .locomotion-sensor-demo {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.9rem;
+
+    video {
+      max-width: 240px;
     }
   }
 

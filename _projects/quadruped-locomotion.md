@@ -143,8 +143,9 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
         </figure>
       </details>
       <figure class="locomotion-chart">
-        <img src="{{ '/assets/img/projects/locomotion/notion/a1-curriculum-time.png' | relative_url }}" alt="A1 time-reversal curriculum run: contact timing and commanded versus measured velocity at 2, 4, and 6.6 meters per second" loading="lazy">
-        <figcaption>Time-reversal curriculum checkpoint: foot contacts and tracking across the three tested commands. Original experiment plot.</figcaption>
+        <img src="{{ '/assets/img/projects/locomotion/notion/a1-curriculum-time-clean.png' | relative_url }}" alt="A1 time-reversal curriculum run: contact timing and commanded versus measured velocity at 2, 4, and 6.6 meters per second" loading="lazy">
+        <div class="locomotion-chart-legend" aria-label="Velocity plot legend"><span class="locomotion-chart-measured">Measured Velocity</span><span class="locomotion-chart-commanded">Commanded Velocity</span></div>
+        <figcaption>Time-reversal curriculum checkpoint: foot contacts and tracking across the three tested commands. Overprinted labels were removed from the original plot.</figcaption>
       </figure>
     </div>
   </section>
@@ -165,8 +166,9 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
         </figure>
       </div>
       <figure class="locomotion-chart">
-        <img src="{{ '/assets/img/projects/locomotion/notion/a1-mirror-1-5.png' | relative_url }}" alt="A1 mirror loss run: contact timing and commanded versus measured velocity at 2, 4, and 6.2 meters per second" loading="lazy">
-        <figcaption>Contact timing and speed tracking for the mirror-loss run at 2, 4, and 6.2 m/s. Original experiment plot.</figcaption>
+        <img src="{{ '/assets/img/projects/locomotion/notion/a1-mirror-1-5-clean.png' | relative_url }}" alt="A1 mirror loss run: contact timing and commanded versus measured velocity at 2, 4, and 6.2 meters per second" loading="lazy">
+        <div class="locomotion-chart-legend" aria-label="Velocity plot legend"><span class="locomotion-chart-measured">Measured Velocity</span><span class="locomotion-chart-commanded">Commanded Velocity</span></div>
+        <figcaption>Contact timing and speed tracking for the mirror-loss run at 2, 4, and 6.2 m/s. Overprinted labels were removed from the original plot.</figcaption>
       </figure>
       <p class="locomotion-note">Higher mirror-loss weight reached 6.6 m/s in another run, but the notes describe a poorer tapping gait at low speed. More regular motion and peak speed did not always move together.</p>
     </div>
@@ -219,12 +221,29 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
     <div>
       <h2>What Transferred To The Real Robot</h2>
       <p>Real-Go1 trials were much slower than full-observation simulation and exposed failures the simulated peak-speed numbers did not capture. A July 19 policy reached about 10.7 km/h at a 3.5 m/s command but fell at a 4.0 m/s command. With a 0.4 m/s² ramp on July 26, a diagonal-reward policy reached about 11 km/h; gallop and time-reversal variants fell before 10 km/h. An August trot-policy trial exceeded 12 km/h, while a later body-height adjustment improved its stance but did not exceed 12 km/h.</p>
-      <div class="locomotion-hardware-links" aria-label="Hardware experiment videos">
-        <a href="https://drive.google.com/file/d/1QinKFtTxgx7tgPHnYPoE-U4uUwqzsd8P/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play" aria-hidden="true"></i> Diagonal Policy · July 26</a>
-        <a href="https://drive.google.com/file/d/1JMwBJNeF_7ZlCFyBjspDxt3U_1JCNogj/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play" aria-hidden="true"></i> Trot Policy · August 4</a>
-        <a href="https://drive.google.com/file/d/1DuZte1NkYjGA7RHB2vr4gUFoWwjsAVpa/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play" aria-hidden="true"></i> Body-Height Trial · August 12</a>
+      <div class="locomotion-demo-grid locomotion-hardware-demo-grid">
+        <figure class="locomotion-demo">
+          <video controls muted playsinline preload="none" poster="{{ '/assets/img/projects/locomotion/notion/hardware-diagonal.jpg' | relative_url }}" aria-label="Real Go1 diagonal-reward policy hardware speed ramp"><source src="{{ '/assets/video/projects/locomotion/hardware/diagonal.mp4' | relative_url }}" type="video/mp4"></video>
+          <figcaption><strong>Diagonal Policy</strong><span>July 26 · About 11 km/h</span></figcaption>
+        </figure>
+        <figure class="locomotion-demo">
+          <video controls muted playsinline preload="none" poster="{{ '/assets/img/projects/locomotion/notion/hardware-bodyheight.jpg' | relative_url }}" aria-label="Real Go1 diagonal policy with adjusted body height"><source src="{{ '/assets/video/projects/locomotion/hardware/bodyheight.mp4' | relative_url }}" type="video/mp4"></video>
+          <figcaption><strong>Body-Height Trial</strong><span>August 12 · Below 12 km/h</span></figcaption>
+        </figure>
       </div>
-      <p class="locomotion-note">Hardware videos are linked from the original experiment log on Google Drive and may require permission. Hardware speeds are recorded in km/h; simulated evaluation speeds above are in m/s.</p>
+      <figure class="locomotion-sensor-demo">
+        <video controls muted playsinline preload="none" poster="{{ '/assets/img/projects/locomotion/notion/hardware-trot.jpg' | relative_url }}" aria-label="P-Gear speed measurement for the real Go1 trot policy"><source src="{{ '/assets/video/projects/locomotion/hardware/trot.mp4' | relative_url }}" type="video/mp4"></video>
+        <figcaption>
+          <strong>Trot Policy · P-Gear Measurement</strong>
+          <span>The August 4 speed sweep recorded a 12.1 km/h maximum. This clip shows the instrument display rather than a camera view of the robot.</span>
+        </figcaption>
+      </figure>
+      <div class="locomotion-hardware-links" aria-label="Hardware experiment videos">
+        <a href="https://drive.google.com/file/d/1QinKFtTxgx7tgPHnYPoE-U4uUwqzsd8P/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Original Diagonal Video</a>
+        <a href="https://drive.google.com/file/d/1JMwBJNeF_7ZlCFyBjspDxt3U_1JCNogj/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Original Trot Measurement</a>
+        <a href="https://drive.google.com/file/d/1DuZte1NkYjGA7RHB2vr4gUFoWwjsAVpa/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Original Body-Height Video</a>
+      </div>
+      <p class="locomotion-note">Embedded clips retain only the active test segments; the full recordings remain linked above. Hardware speeds are recorded in km/h; simulated evaluation speeds above are in m/s.</p>
     </div>
   </section>
 
