@@ -254,4 +254,5 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
       <p class="locomotion-note">Source: 2024 experiment log and its 14 subpages. Reported maxima are observations from individual runs, not statistical confidence estimates.</p>
     </div>
   </section>
+  <p class="locomotion-credit">This work was conducted with Boyuan Liang at UC Berkeley.</p>
 </div>

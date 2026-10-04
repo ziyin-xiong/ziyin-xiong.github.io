@@ -889,7 +889,8 @@ body .publications ol.bibliography > li .author > em {
   }
 }
 
-.anymanip-credit {
+.anymanip-credit,
+.locomotion-credit {
   margin: 0;
   padding-top: 1.2rem;
   border-top: 1px solid var(--global-divider-color);
