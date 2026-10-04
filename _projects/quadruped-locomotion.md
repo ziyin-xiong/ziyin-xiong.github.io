@@ -142,6 +142,12 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
           <figcaption><strong>6.0 m/s</strong><span>No Symmetry Reward · Trot</span></figcaption>
         </figure>
       </details>
+      <figure class="locomotion-gait-figure">
+        <div class="locomotion-gait-crop locomotion-gait-crop-bottom">
+          <img src="{{ '/assets/img/projects/locomotion/notion/a1-curriculum-time.png' | relative_url }}" alt="A1 time-reversal curriculum checkpoint foot-contact timing at 2, 4, and 6.6 meters per second" loading="lazy">
+        </div>
+        <figcaption>A1 Curriculum · Foot-contact timing at 2, 4, and 6.6 m/s.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -160,6 +166,12 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
           <figcaption><strong>Mirror Loss 1.5 · 2.0 m/s</strong><span>No Curriculum</span></figcaption>
         </figure>
       </div>
+      <figure class="locomotion-gait-figure">
+        <div class="locomotion-gait-crop locomotion-gait-crop-top">
+          <img src="{{ '/assets/img/projects/locomotion/notion/a1-mirror-1-5.png' | relative_url }}" alt="A1 mirror-loss checkpoint foot-contact timing at 2, 4, and 6.2 meters per second" loading="lazy">
+        </div>
+        <figcaption>A1 Mirror Loss · Foot-contact timing at 2, 4, and 6.2 m/s.</figcaption>
+      </figure>
       <p class="locomotion-note">Higher mirror-loss weight reached 6.6 m/s in another run, but the notes describe a poorer tapping gait at low speed. More regular motion and peak speed did not always move together.</p>
     </div>
   </section>
@@ -188,6 +200,21 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
           <figcaption><strong>Left-Right + Mirror · 6.0 m/s</strong><span>Full Observation</span></figcaption>
         </figure>
       </div>
+      <figure class="locomotion-gait-figure">
+        <img src="{{ '/assets/img/projects/locomotion/notion/go1-left-mirror.png' | relative_url }}" alt="Go1 full-observation left-right reward and mirror-loss policy: speed tracking and foot contacts at 2, 4, and 6 meters per second" loading="lazy">
+        <figcaption>Go1 left-right reward plus mirror loss: command tracking and foot contacts at 2, 4, and 6 m/s.</figcaption>
+      </figure>
+      <details class="locomotion-extra">
+        <summary>Compare Baseline And Time-Reversal Plots</summary>
+        <figure class="locomotion-gait-figure">
+          <img src="{{ '/assets/img/projects/locomotion/notion/go1-baseline.png' | relative_url }}" alt="Go1 baseline speed tracking and foot contacts at 2, 4, and 5.2 meters per second" loading="lazy">
+          <figcaption>Go1 Baseline · 2, 4, and 5.2 m/s.</figcaption>
+        </figure>
+        <figure class="locomotion-gait-figure">
+          <img src="{{ '/assets/img/projects/locomotion/notion/go1-time.png' | relative_url }}" alt="Go1 time-reversal speed tracking and foot contacts at 2, 4, and 5.8 meters per second" loading="lazy">
+          <figcaption>Go1 Time Reversal · 2, 4, and 5.8 m/s.</figcaption>
+        </figure>
+      </details>
     </div>
   </section>
 
