@@ -144,7 +144,7 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
       </details>
       <figure class="locomotion-gait-figure">
         <div class="locomotion-gait-crop locomotion-gait-crop-bottom">
-          <img src="{{ '/assets/img/projects/locomotion/notion/a1-curriculum-time.png' | relative_url }}" alt="A1 time-reversal curriculum checkpoint foot-contact timing at 2, 4, and 6.6 meters per second" loading="lazy">
+          <img src="{{ '/assets/img/projects/locomotion/notion/a1-curriculum-time.png' | relative_url }}" alt="A1 time-reversal curriculum checkpoint foot-contact timing at 2, 4, and 6.6 meters per second" loading="eager">
         </div>
         <figcaption>A1 Curriculum · Foot-contact timing at 2, 4, and 6.6 m/s.</figcaption>
       </figure>
@@ -168,7 +168,7 @@ github: https://github.com/ziyin-xiong/Go1-Locomotion
       </div>
       <figure class="locomotion-gait-figure">
         <div class="locomotion-gait-crop locomotion-gait-crop-top">
-          <img src="{{ '/assets/img/projects/locomotion/notion/a1-mirror-1-5.png' | relative_url }}" alt="A1 mirror-loss checkpoint foot-contact timing at 2, 4, and 6.2 meters per second" loading="lazy">
+          <img src="{{ '/assets/img/projects/locomotion/notion/a1-mirror-1-5.png' | relative_url }}" alt="A1 mirror-loss checkpoint foot-contact timing at 2, 4, and 6.2 meters per second" loading="eager">
         </div>
         <figcaption>A1 Mirror Loss · Foot-contact timing at 2, 4, and 6.2 m/s.</figcaption>
       </figure>
