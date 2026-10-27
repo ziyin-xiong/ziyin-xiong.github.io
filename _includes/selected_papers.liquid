@@ -6,9 +6,9 @@
         id="publication-tab-selected"
         type="button"
         role="tab"
-        aria-selected="true"
+        aria-selected="false"
         aria-controls="publication-panel"
-        tabindex="0"
+        tabindex="-1"
         data-publication-view="selected"
       >
         Selected Publications
@@ -18,9 +18,9 @@
         id="publication-tab-all"
         type="button"
         role="tab"
-        aria-selected="false"
+        aria-selected="true"
         aria-controls="publication-panel"
-        tabindex="-1"
+        tabindex="0"
         data-publication-view="all"
       >
         All Publications
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <div id="publication-panel" class="publication-panel" role="tabpanel" aria-labelledby="publication-tab-selected" tabindex="0">
+  <div id="publication-panel" class="publication-panel" role="tabpanel" aria-labelledby="publication-tab-all" tabindex="0">
     <div class="publications" data-publication-list>
       {% bibliography --group_by none %}
     </div>
@@ -99,6 +99,6 @@
       });
     });
 
-    activate(tabs[0]);
+    activate(tabs.find((tab) => tab.dataset.publicationView === 'all') ?? tabs[0]);
   })();
 </script>
